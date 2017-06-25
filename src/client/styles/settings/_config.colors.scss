@@ -1,0 +1,27 @@
+// ==========================================================================
+// Settings / Config / Colors
+// ==========================================================================
+
+// Palette
+// =============================================================================
+$white: #FFFFFF;
+$black: #000000;
+$blue: #0000FF;
+
+// Specific
+// =============================================================================
+// link
+$link-color:       $blue;
+$link-focus-color: $blue;
+$link-hover-color: darken($blue, 10%);
+
+// selection
+$selection-text-color:       $white;
+$selection-background-color: rgba($black, .5);
+
+// Social Colors
+// =============================================================================
+$facebook-color:  #3B5998;
+$instagram-color: #E1306C;
+$youtube-color:   #CD201F;
+$twitter-color:   #1DA1F2;

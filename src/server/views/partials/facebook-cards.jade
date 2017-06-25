@@ -1,0 +1,24 @@
+//- open graph protocol
+//- http://ogp.me/
+
+//- graph type
+meta(property='og:type', content='website')
+
+//- title
+if title
+  meta(property='og:title', content='#{title} • /* @echo datas.title */')
+else
+  meta(property='og:title', content='/* @echo datas.title */')
+meta(property='og:site_name', content='/* @echo datas.title */')
+
+//- description
+if description
+  meta(property='og:description', content='#{description.full}')
+else
+  meta(property='og:description', content='/* @echo datas.description */')
+
+//- page uri
+meta(property='og:url', content='#{uri}')
+
+//- share image
+meta(property='og:image', content='/* @echo datas.social.uri *//images/share-default.png')

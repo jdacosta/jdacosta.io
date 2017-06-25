@@ -1,0 +1,24 @@
+{
+  "routes":
+  {
+    "app": [
+      {
+        "id": "home",
+        "type": "home",
+        "url": "/",
+        "httpcode": 200,
+        "enable": true
+      },
+      {
+        "id": "about",
+        "type": "about",
+        "url": "/about",
+        "httpcode": 200,
+        "enable": true
+      }
+    ],
+    "system": {
+      "notfound": { "id": "notfound", "httpcode": 404, "enable": true }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// ==========================================================================
+// Objects / Buttons
+// ==========================================================================
+.o-button {
+    @include u-hocus {
+        background-color: gray;
+    }
+
+    padding: rem(10px);
+    background-color: lightgray;
+}

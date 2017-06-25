@@ -1,0 +1,30 @@
+//- twitter cards
+//- https://dev.twitter.com/cards/types
+
+//- card type
+meta(name='twitter:card', content='summary')
+
+//- title
+if title
+  meta(name='twitter:title', content='#{title} • /* @echo datas.title */')
+else
+  meta(name='twitter:title', content='/* @echo datas.title */')
+
+//- description
+if description
+  meta(name='twitter:description', content='#{description.full}')
+else
+  meta(name='twitter:description', content='/* @echo datas.description */')
+
+//- author info
+meta(name='twitter:site', content='/* @echo datas.social.twitter */')
+meta(name='twitter:creator', content='/* @echo datas.social.twitter */')
+
+//- page uri
+if uri
+  meta(name='twitter:url', content='#{uri}')
+else
+  meta(name='twitter:url', content='/* @echo datas.social.uri */')
+
+//- share image
+meta(name='twitter:image', content='/* @echo datas.social.uri *//images/share-twitter.png')

@@ -1,0 +1,21 @@
+// ==========================================================================
+// Objects / Link
+// ==========================================================================
+.o-link {
+    text-decoration: none;
+    color: inherit;
+    transition: background-position;
+    transition-duration: 0.3s;
+    transition-timing-function: $Power1EaseOut;
+    background-image: linear-gradient(to bottom, rgba($blue, 1) 0%, rgba($blue, 1) 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 21px;
+    overflow: hidden;
+
+    &:hover {
+        transition-timing-function: $Power1EaseIn;
+        background-image: linear-gradient(to bottom, rgba($blue, 1) 0%, rgba($blue, 1) 100%);
+        background-position: 0 0;
+    }
+}

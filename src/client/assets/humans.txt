@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible
+
+# TEAM
+
+  Developer: Julien Martins Da Costa
+  Contact: julien.martinsdacosta [at] gmail.com
+  Twitter: @DCJulien
+  From: Montréal, Québec, Canada
+
+
+# THANKS
+
+  Designer: Romain Passelande
+  Contact: passelanderomain [at] gmail.com
+  Twitter: @RomainPSD
+  From: Paris, Île-de-France, France

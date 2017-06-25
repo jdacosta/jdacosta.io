@@ -1,0 +1,11 @@
+// ==========================================================================
+// Settings / Config
+// ==========================================================================
+
+// Context
+// =============================================================================
+// The current stylesheet context. Available values: frontend, editor.
+$context: frontend  !default;
+
+// Path is relative to the stylesheets directory.
+$assets-path: "../"  !default;

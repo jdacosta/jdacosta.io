@@ -1,0 +1,63 @@
+// ==========================================================================
+// Settings / Config / Fonts
+// ==========================================================================
+
+// Typefaces
+// =============================================================================
+$font-sans-serif: sans-serif;
+$font-gobold-ht: 'Gobold-High-Thin', $font-sans-serif;
+$font-gobold-up: 'Gobold-Uplow', $font-sans-serif;
+
+// Typography
+// =============================================================================
+
+// Base
+$font-size: 16px;
+$line-height: 24px / $font-size;
+$font-family: $font-gobold-ht;
+$color: #222222;
+
+// Headings
+$font-size-h1-mobile: 25px  !default;
+$font-size-h1-tablet: 30px  !default;
+$font-size-h1-medium: 30px  !default;
+$font-size-h1-big:    36px  !default;
+$font-size-h1:        40px  !default;
+
+$font-size-h2-mobile: 28px  !default;
+$font-size-h2-tablet: 28px  !default;
+$font-size-h2-medium: 28px  !default;
+$font-size-h2-big:    26px  !default;
+$font-size-h2:        28px  !default;
+
+$font-size-h3-mobile: 25px  !default;
+$font-size-h3-tablet: 25px  !default;
+$font-size-h3-medium: 25px  !default;
+$font-size-h3-big:    21px  !default;
+$font-size-h3:        25px  !default;
+
+$font-size-h4-mobile: 20px  !default;
+$font-size-h4-tablet: 20px  !default;
+$font-size-h4-medium: 20px  !default;
+$font-size-h4-big:    18px  !default;
+$font-size-h4:        20px  !default;
+
+$font-size-h5-mobile: 18px  !default;
+$font-size-h5-tablet: 18px  !default;
+$font-size-h5-medium: 18px  !default;
+$font-size-h5-big:    16px  !default;
+$font-size-h5:        18px  !default;
+
+$font-size-h6-mobile: 16px  !default;
+$font-size-h6-tablet: 16px  !default;
+$font-size-h6-medium: 16px  !default;
+$font-size-h6-big:    14px  !default;
+$font-size-h6:        16px  !default;
+
+$line-height-h: $line-height;
+
+// Weights
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;

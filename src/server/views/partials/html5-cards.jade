@@ -1,0 +1,14 @@
+//- title
+if title
+  meta(itemprop='name', content='#{title} • /* @echo datas.title */')
+else
+  meta(itemprop='name', content='/* @echo datas.title */')
+
+//- description
+if description
+  meta(itemprop='description', content='#{description.full}')
+else
+  meta(itemprop='description', content='/* @echo datas.description */')
+
+//- share image
+meta(itemprop='image', content='/* @echo datas.social.uri *//images/share-default.png')

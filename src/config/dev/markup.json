@@ -1,0 +1,18 @@
+{
+  "title": "Julien Martins Da Costa — Front-End Web Developer",
+  "description": "Julien Martins Da Costa aka jdacosta, a front-End web developer based in Montréal.",
+  "pages": {
+    "about": {
+      "title": "About"
+    }
+  },
+  "system": {
+    "notfound": {
+      "title": "Not found"
+    }
+  },
+  "social": {
+    "uri": "https://jdacosta.io",
+    "twitter": "@DCJulien"
+  }
+}

@@ -1,0 +1,51 @@
+include ./../mixins/ie
+
+block vars
+
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    +ie('if IE')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title
+      if title
+        != title
+        |&nbsp;—&nbsp;
+      | /* @echo datas.title */
+    if description
+      meta(name='description', content='#{description.full}')
+    else
+      meta(name='description', content='/* @echo datas.description */')
+    meta(name='robots', content='index, follow')
+    meta(name='author', content='humans.txt')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
+
+    //- styles
+    block styles
+      link(rel='stylesheet', href='/css//* @echo app.style */?/* @echo app.time */')
+
+    //- cards and favicons
+    include ./../partials/facebook-cards
+    include ./../partials/twitter-cards
+    include ./../partials/html5-cards
+    include ./../partials/favicons
+
+  body(class='#{type}')
+    block before-content
+      include ./../partials/transitions
+      include ./../blocks/header
+
+    main(id='jdacosta.io', class='o-scroll js-main')
+      div(id='js-barba-wrapper', class='o-barba js-barba')
+        div(class='o-barba_container js-barba-container #{tpl}', data-namespace='#{type}')
+          block content
+
+    block after-content
+      include ./../blocks/footer
+
+    //- scripts
+    block scripts
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+      script(src='/js//* @echo app.script */?/* @echo app.time */')
+      include ./../partials/google-analytics
