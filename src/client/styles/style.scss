@@ -43,6 +43,7 @@
 @import "objects/link";
 @import "objects/form";
 @import "objects/button";
+@import "objects/transitions";
 
 // Vendors
 // ==========================================================================
@@ -50,11 +51,13 @@
 
 // Components
 // ==========================================================================
-// @import "components/name";
+@import "components/header";
 
 // Templates
 // ==========================================================================
-// @import "templates/name";
+@import "templates/about";
+@import "templates/home";
+@import "templates/notfound";
 
 // Utilities
 // ==========================================================================
