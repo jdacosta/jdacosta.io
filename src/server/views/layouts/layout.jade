@@ -31,18 +31,18 @@ html(lang="en")
     include ./../partials/html5-cards
     include ./../partials/favicons
 
-  body(class='#{type}')
+  body
     block before-content
       include ./../partials/transitions
-      include ./../blocks/header
 
     main(id='jdacosta.io', class='o-scroll js-main')
       div(id='js-barba-wrapper', class='o-barba js-barba')
         div(class='o-barba_container js-barba-container #{tpl}', data-namespace='#{type}')
+          include ./../blocks/header
           block content
 
     block after-content
-      include ./../blocks/footer
+      //- no content
 
     //- scripts
     block scripts

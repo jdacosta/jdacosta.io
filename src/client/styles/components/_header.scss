@@ -1,0 +1,85 @@
+// ==========================================================================
+// Components / Header
+// ==========================================================================
+.c-header {
+  user-select: none;
+}
+
+.c-header_col-left,
+.c-header_col-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  z-index: $zi-header;
+}
+
+.c-header_col-left {
+  left: 75px;
+}
+
+.c-header_col-right {
+  right: 75px;
+
+  .tpl-about & {
+    &.-about {
+      display: none;
+    }
+  }
+
+  .tpl-home &,
+  .tpl-notfound & {
+    &.-close {
+      display: none;
+    }
+  }
+}
+
+.c-header_title {
+  margin: 0;
+  font-weight: normal;
+  font-family: $font-gobold-up;
+  font-size: 12px;
+  text-transform: lowercase;
+  color: $gray-dark;
+  cursor: default;
+}
+
+.c-header_link {
+  position: relative;
+  font-family: $font-gobold-up;
+  font-size: 12px;
+  text-transform: lowercase;
+  color: $gray-dark;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $gray-dark;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    left: 0;
+    height: 1px;
+    z-index: -1;
+    background-color: $gray-dark;
+    transform-origin: right center;
+    transform: scale3d(0, 1, 1);
+    transition: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: $Power1EaseInOut;
+  }
+
+  @media (min-width: $from-medium) {
+    &:hover {
+      &::after {
+        transform-origin: left center;
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+}
