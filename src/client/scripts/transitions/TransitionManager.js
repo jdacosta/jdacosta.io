@@ -28,6 +28,18 @@ export default class {
 
       let TransitionObject;
       switch (transition) {
+        case 'home-to-about':
+          TransitionObject = DefaultTransition({
+            overrideClass: 'is-home-to-about'
+          });
+          break;
+
+        case 'about-to-home':
+          TransitionObject = DefaultTransition({
+            overrideClass: 'is-about-to-home'
+          });
+          break;
+
         default:
           TransitionObject = DefaultTransition({
             overrideClass: 'is-default-loading'

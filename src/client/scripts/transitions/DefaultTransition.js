@@ -7,7 +7,7 @@ function DefaultTransition(options) {
   const overrideClass = (typeof options.overrideClass === 'string') ? options.overrideClass : '';
 
   return Barba.BaseTransition.extend({
-    start: () => {
+    start() {
       $html
         .removeClass('dom-is-loaded dom-is-animated')
         .addClass(`dom-is-loading ${overrideClass}`);
@@ -18,10 +18,10 @@ function DefaultTransition(options) {
         Promise
           .all([this.newContainerLoading])
           .then(this.finish.bind(this));
-      }, 2000);
+      }, 900);
     },
 
-    finish: () => {
+    finish() {
       this.done();
 
       const $el = $(this.newContainer);
@@ -42,7 +42,7 @@ function DefaultTransition(options) {
         $html
           .removeClass(overrideClass)
           .addClass('dom-is-animated');
-      }, 1000);
+      }, 100);
     }
   });
 }

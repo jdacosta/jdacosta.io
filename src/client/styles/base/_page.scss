@@ -8,49 +8,44 @@ body,
 .o-barba,
 .o-barba_container,
 .o-scroll {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-html.has-smooth-scroll,
-.has-smooth-scroll body,
-.has-smooth-scroll .o-main,
-.has-smooth-scroll .o-barba,
-.has-smooth-scroll .o-barba_container,
-.o-scroll {
-    overflow: hidden;
-    height: 100%;
+.o-barba_container {
+  background-color: $white;
+
+  &.tpl-about {
+    background-color: $black;
+  }
 }
 
 html {
-    @include font-smoothing;
-    color: $color;
-    font-size: em($font-size, 16px);
-    font-family: $font-family;
-    line-height: $line-height;
+  @include font-smoothing;
+  color: $color;
+  font-size: em($font-size, 16px);
+  font-family: $font-family;
+  line-height: $line-height;
 }
 
 body {
-    @media print {
-        overflow: auto !important;
-    }
+  @media print {
+    overflow: auto !important;
+  }
 }
 
 ::selection {
-    background-color: $selection-background-color;
-    color:            $selection-text-color;
-    text-shadow:      none;
+  background-color: $selection-background-color;
+  color: $selection-text-color;
+  text-shadow: none;
 }
 
 a {
-    color: $link-color;
-    transition: color $speed $easing;
+  color: $link-color;
+  transition: color $speed $easing;
 
-    @include u-hocus {
-        color: $link-hover-color;
-    }
-}
-
-.o-main {
-    overflow: hidden;
+  @include u-hocus {
+    color: $link-hover-color;
+  }
 }
