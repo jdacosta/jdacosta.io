@@ -9,12 +9,19 @@
   left: 0;
   overflow: hidden;
   z-index: $zi-no-active;
-  // TODO: skewY(-5deg) ?
 
   .is-home-to-about &,
   .is-about-to-home & {
     z-index: $zi-transitions;
   }
+}
+
+.o-transitions_wrap {
+  position: relative;
+  width: 250%;
+  height: 250%;
+  transform: translate3d(-50%, -50%, 0) skewY(-5deg);
+  transform-origin: center;
 }
 
 .o-transitions_mask {
