@@ -74,6 +74,20 @@
     transition-timing-function: $Power1EaseInOut;
   }
 
+  .-close & {
+    color: $gray-light;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $gray-light;
+    }
+
+    &::after {
+      background-color: $gray-light;
+    }
+  }
+
   @media (min-width: $from-medium) {
     &:hover {
       &::after {
