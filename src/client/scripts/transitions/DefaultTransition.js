@@ -18,7 +18,7 @@ function DefaultTransition(options) {
         Promise
           .all([this.newContainerLoading])
           .then(this.finish.bind(this));
-      }, 900);
+      }, 2000);
     },
 
     finish() {

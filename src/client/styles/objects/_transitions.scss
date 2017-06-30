@@ -34,8 +34,8 @@
   transform: scale3d(1, 0, 1);
   transform-origin: center bottom;
   transition: transform;
-  transition-duration: 0.5s;
-  transition-timing-function: $Power2EaseInOut;
+  transition-duration: 0s;
+  transition-timing-function: $Power1EaseInOut;
 
   &::after {
     content: '';
@@ -48,9 +48,9 @@
     transform: scale3d(1, 0, 1);
     transform-origin: center bottom;
     transition: transform;
-    transition-duration: 0.3s;
-    transition-delay: 0.4s;
-    transition-timing-function: $Power2EaseInOut;
+    transition-duration: 0s;
+    transition-delay: 0.1s;
+    transition-timing-function: $Power1EaseInOut;
   }
 
   .is-home-to-about & {
@@ -63,9 +63,11 @@
   .is-about-to-home & {
     opacity: 1;
     transform: scale3d(1, 1, 1);
+    transition-duration: 1s;
 
     &::after {
       transform: scale3d(1, 1, 1);
+      transition-duration: 0.8s;
     }
   }
 }
